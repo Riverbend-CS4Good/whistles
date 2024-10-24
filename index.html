@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Piano</title>
+</head>
+<body>
+
+<div class="content">
+
+<div class="header">
+ 
+    <div class="instructions">
+        <p> Use the mouse or keyboard to play a note!</p>
+    </div>
+    
+    <div>
+      <img class="logo" src="main_logo.png" alt="Riverbend Community Math Center">
+    </div>
+
+    <div class="freqDisplay">
+        <p id="hrtz" class="hrtz"></p>
+        <p class="label">
+          <em>Hz</em>
+        </p>
+    </div>
+
+</div>
+    <div class="piano">
+        <div data-note="C4" class="key white" data-freq="261.63">C4</div>
+        <div data-note="Db4" class="key black" data-freq="277.18">Db4</div>
+        <div data-note="D4" class="key white" data-freq="293.66">D4</div>
+        <div data-note="Eb4" class="key black" data-freq="311.13">Eb4</div>
+        <div data-note="E4" class="key white" data-freq="329.63">E4</div>
+        <div data-note="F4" class="key white" data-freq="349.23">F4</div>
+        <div data-note="Gb4" class="key black" data-freq="369.99">Gb4</div>
+        <div data-note="G4" class="key white" data-freq="392.00">G4</div>
+        <div data-note="Ab4" class="key black" data-freq="415.30">Ab4</div>
+        <div data-note="A4" class="key white" data-freq="440.00">A4</div>
+        <div data-note="Bb4" class="key black" data-freq="466.16">Bb4</div>
+        <div data-note="B4" class="key white" data-freq="493.88">B4</div>
+
+        <div data-note="C5" class="key white" data-freq="523.25">C5</div>
+        <div data-note="Db5" class="key black" data-freq="554.37">Db5</div>
+        <div data-note="D5" class="key white" data-freq="587.33">D5</div>
+        <div data-note="Eb5" class="key black" data-freq="622.25">Eb5</div>
+        <div data-note="E5" class="key white" data-freq="659.25">E5</div>
+        <div data-note="F5" class="key white" data-freq="698.46">F5</div>
+        <div data-note="Gb5" class="key black" data-freq="739.99">Gb5</div>
+        <div data-note="G5" class="key white" data-freq="783.99">G5</div>
+        <div data-note="Ab5" class="key black" data-freq="830.61">Ab5</div>
+        <div data-note="A5" class="key white" data-freq="880.00">A5</div>
+        <div data-note="Bb5" class="key black" data-freq="932.33">Bb5</div>
+        <div data-note="B5" class="key white" data-freq="987.77">B5</div>
+
+        <div data-note="C6" class="key white" data-freq="1046.50">C6</div>
+        <div data-note="Db6" class="key black" data-freq="1108.73">Db6</div>
+        <div data-note="D6" class="key white" data-freq="1174.66">D6</div>
+        <div data-note="Eb6" class="key black" data-freq="1244.51">Eb6</div>
+        <div data-note="E6" class="key white" data-freq="1318.51">E6</div>
+        <div data-note="F6" class="key white" data-freq="1396.91">F6</div>
+        <div data-note="Gb6" class="key black" data-freq="1479.98">Gb6</div>
+        <div data-note="G6" class="key white" data-freq="1567.98">G6</div>
+        <div data-note="Ab6" class="key black" data-freq="1661.22">Ab6</div>
+        <div data-note="A6" class="key white" data-freq="1760.00">A6</div>
+        <div data-note="Bb6" class="key black" data-freq="1864.66">Bb6</div>
+        <div data-note="B6" class="key white" data-freq="1975.53">B6</div>
+
+    </div>
+</div>
+
+    <audio id="C4" src="notes/4th/C4.mp3"></audio>
+    <audio id="Db4" src="notes/4th/Db4.mp3"></audio>
+    <audio id="D4" src="notes/4th/D4.mp3"></audio>
+    <audio id="Eb4" src="notes/4th/Eb4.mp3"></audio>
+    <audio id="E4" src="notes/4th/E4.mp3"></audio>
+    <audio id="F4" src="notes/4th/F4.mp3"></audio>
+    <audio id="Gb4" src="notes/4th/Gb4.mp3"></audio>
+    <audio id="G4" src="notes/4th/G4.mp3"></audio>
+    <audio id="Ab4" src="notes/4th/Ab4.mp3"></audio>
+    <audio id="A4" src="notes/4th/A4.mp3"></audio>
+    <audio id="Bb4" src="notes/4th/Bb4.mp3"></audio>
+    <audio id="B4" src="notes/4th/B4.mp3"></audio>
+
+    <audio id="C5" src="notes/5th/C5.mp3"></audio>
+    <audio id="Db5" src="notes/5th/Db5.mp3"></audio>
+    <audio id="D5" src="notes/5th/D5.mp3"></audio>
+    <audio id="Eb5" src="notes/5th/Eb5.mp3"></audio>
+    <audio id="E5" src="notes/5th/E5.mp3"></audio>
+    <audio id="F5" src="notes/5th/F5.mp3"></audio>
+    <audio id="Gb5" src="notes/5th/Gb5.mp3"></audio>
+    <audio id="G5" src="notes/5th/G5.mp3"></audio>
+    <audio id="Ab5" src="notes/5th/Ab5.mp3"></audio>
+    <audio id="A5" src="notes/5th/A5.mp3"></audio>
+    <audio id="Bb5" src="notes/5th/Bb5.mp3"></audio>
+    <audio id="B5" src="notes/5th/B5.mp3"></audio>
+
+    <audio id="C6" src="notes/6th/C6.mp3"></audio>
+    <audio id="Db6" src="notes/6th/Db6.mp3"></audio>
+    <audio id="D6" src="notes/6th/D6.mp3"></audio>
+    <audio id="Eb6" src="notes/6th/Eb6.mp3"></audio>
+    <audio id="E6" src="notes/6th/E6.mp3"></audio>
+    <audio id="F6" src="notes/6th/F6.mp3"></audio>
+    <audio id="Gb6" src="notes/6th/Gb6.mp3"></audio>
+    <audio id="G6" src="notes/6th/G6.mp3"></audio>
+    <audio id="Ab6" src="notes/6th/Ab6.mp3"></audio>
+    <audio id="A6" src="notes/6th/A6.mp3"></audio>
+    <audio id="Bb6" src="notes/6th/Bb6.mp3"></audio>
+    <audio id="B6" src="notes/6th/B6.mp3"></audio>
+</body>
+</html>

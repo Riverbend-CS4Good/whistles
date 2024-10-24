@@ -1,0 +1,110 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#f0f8ff;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.instructions{
+  display:flex;
+  width: 39%;
+}
+ 
+.logo{
+  display: flex;
+  height: 60%;
+  width: 60%;
+  margin-bottom: 8px;
+}
+
+.freqDisplay{
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 8px;
+  justify-content: right;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #898;
+  background-color: powderblue;
+}
+
+.label{
+  font-family: monospace;
+  font-size: 20px;
+  color:#779;
+  margin-right: 5px;
+}
+
+.hrtz{
+  font-family:ariel, sans serif;
+  margin-right:auto;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  color: #222;
+  align-
+}
+
+.piano {
+  display: flex;
+  flex-direction: row;
+}
+
+.key {
+  height: calc(var(--width) * 4);
+  width: var(--width);
+  margin-right: calc(var(--border-width) * -1);
+}
+
+.white {
+  --width: 75px;
+  background-color: white;
+  --border-width: 2px;
+  border: var(--border-width) solid #333;
+  font-size:20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  line-height:560px;
+  color:slategray
+}
+
+.white.active {
+  background-color: #CCC;
+}
+
+.black {
+    --width: 50px;
+    background-color: black;
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 2;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    line-height: 360px;
+    color: darkgray
+}
+
+.black.active {
+  background-color: #333;
+}
