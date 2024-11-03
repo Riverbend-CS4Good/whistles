@@ -1,6 +1,7 @@
 const WHITE_KEYS = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', '/', 'Shift']
 const BLACK_KEYS = ['2', '3', '5', '6', '7', '9', '0', 's', 'd', 'g', 'h', 'j', 'l', ';', "'"]
 
+// TODO: Look at this, some of these are not needed
 const freq = document.querySelectorAll('.data.freq')
 const note = document.querySelectorAll('.data.note')
 const keys = document.querySelectorAll('.key')
@@ -10,6 +11,7 @@ const blackKeys = document.querySelectorAll('.key.black')
 keys.forEach(key => {
   key.addEventListener('click', () => playNote(key))
 })
+
 
 document.addEventListener('keydown', e => {
   if (e.repeat) return
@@ -21,6 +23,8 @@ document.addEventListener('keydown', e => {
   if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex])
 })
 
+
+// TODO: Fix playNote function for Safari browsers
 function playNote(key) {
   const noteAudio = document.getElementById(key.dataset.note)
   noteAudio.currentTime = 0
