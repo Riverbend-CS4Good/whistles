@@ -26,7 +26,9 @@ document.addEventListener('keydown', e => {
 
 // TODO: Fix playNote function for Safari browsers
 function playNote(key) {
-  const noteAudio = document.getElementById(key.dataset.note)
+  /* Create a new object everytime a note is played so that the sound from the old note 
+  still plays alongside the new note */
+  const noteAudio = new Audio(document.getElementById(key.dataset.note).src)
   noteAudio.currentTime = 0
   noteAudio.play()
   document.getElementById("hrtz").innerHTML = 
