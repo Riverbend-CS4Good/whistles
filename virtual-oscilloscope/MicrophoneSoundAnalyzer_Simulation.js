@@ -425,7 +425,7 @@ var _stringProperties = {};
     }  // > CustomCode.Audio Ctx Functions:8
     baseFreq = rate / freqArray.length; // freqArray.length should be npts/2  // > CustomCode.Audio Ctx Functions:9
     for (i=0; i<freqArray.length; i++) {  // > CustomCode.Audio Ctx Functions:10
-      freqArray[i] = i * baseFreq/1000.0;  //frequency in kHz  // > CustomCode.Audio Ctx Functions:11
+      freqArray[i] = i * baseFreq  //frequency in Hz  // > CustomCode.Audio Ctx Functions:11
     }  // > CustomCode.Audio Ctx Functions:12
     //console.log("length"+tVec.length + "  rate: "+rate );  // > CustomCode.Audio Ctx Functions:13
   }  // > CustomCode.Audio Ctx Functions:14
@@ -1074,7 +1074,7 @@ function MicrophoneSoundAnalyzer_View_0 (_topFrame) {
       .setProperty("TitleY","audio level (dB)") // EJsS HtmlView.HtmlView Page: setting property 'TitleY' for element 'fftPanel'
       .setProperty("YTickStep",10) // EJsS HtmlView.HtmlView Page: setting property 'YTickStep' for element 'fftPanel'
       .setProperty("AutoScaleY",true) // EJsS HtmlView.HtmlView Page: setting property 'AutoScaleY' for element 'fftPanel'
-      .setProperty("TitleX","f (kHz)") // EJsS HtmlView.HtmlView Page: setting property 'TitleX' for element 'fftPanel'
+      .setProperty("TitleX","f (Hz)") // EJsS HtmlView.HtmlView Page: setting property 'TitleX' for element 'fftPanel'
       .setProperty("AutoScaleX",false) // EJsS HtmlView.HtmlView Page: setting property 'AutoScaleX' for element 'fftPanel'
       .setProperty("XAutoTicks",false) // EJsS HtmlView.HtmlView Page: setting property 'XAutoTicks' for element 'fftPanel'
       .setProperty("XScalePrecision",1) // EJsS HtmlView.HtmlView Page: setting property 'XScalePrecision' for element 'fftPanel'
