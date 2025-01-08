@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+<ModulePrefs
+title="sound_analyzer"
+author="Felix J. Garcia Clemente; Tze Kwang Leong; Loo Kang Wee"
+description=""
+screenshot="./sound_analyzer/SoundAnalyzer.png"
+thumbnail="./sound_analyzer/SoundAnalyzer.png">
+<Require feature="opensocial-0.9"/>
+<Require feature="dynamic-height"/>
+</ModulePrefs>
+<Content type="html" href="sound_analyzer_Simulation.xhtml"/>
+</Module>

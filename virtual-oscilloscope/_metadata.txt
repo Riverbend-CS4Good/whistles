@@ -1,0 +1,21 @@
+generated-with: Easy Java/Javascript Simulations, version 5.3, build 190423. Visit http://www.um.es/fem/Ejs
+title: Frequency Spectrum Analyzer
+logo-image: sound_analyzer/SoundAnalyzer.png
+author: Felix J. Garcia Clemente; Tze Kwang Leong; Loo Kang Wee
+copyright: 
+preferred-width: 800
+preferred-height: 600
+author-image: 01authorFelix_J_Garcia_Clemente.png;./01authorleongtzekwang.png;./01authorlookang50x50.png
+source: sound_analyzer.ejss
+main-script: sound_analyzer_Simulation.js
+main-simulation: sound_analyzer_Simulation.xhtml
+available-languages: 
+html-contents: sound_analyzer_Contents.xhtml
+html-main: sound_analyzer.xhtml
+page-title: Frequency Spectrum Analyzer
+page-index: sound_analyzer_Simulation.xhtml
+resource: 01authorleongtzekwang.png
+resource: 01authorlookang50x50.png
+resource: sound_analyzer/SoundAnalyzer.png
+resource: ejss.css
+resource: 01authorFelix_J_Garcia_Clemente.png
