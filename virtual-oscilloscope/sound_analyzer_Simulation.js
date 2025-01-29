@@ -901,6 +901,18 @@ function sound_analyzer_View_0 (_topFrame) {
       .setProperty("Text","<h1>Sound Frequency Analyzer</h1>") // EJsS HtmlView.HtmlView Page: setting property 'Text' for element 'topLabel'
       ;
 
+    _view._addElement(EJSS_INTERFACE.imageAndTextButton, "linkToPage", _view.labelPanel)  // EJsS HtmlView.HtmlView Page: declaration of element 'linkToPage'
+      .setProperty("Text", "<a href=../index.html style='color: #000080; font-size: 25px; font-weight: bold; '>Go to Piano </a>")  // Set the link text
+      .setProperty("Position", "absolute")  
+      .setProperty("Top", "30px")  
+      .setProperty("Left", "30px")  
+      .setProperty("zIndex", "9999")
+      ;
+    
+    document.getElementById("linkToPage").addEventListener('click', function() {
+      window.location.href = '../index.html';  // Navigate to the target URL
+    });
+
     _view._addElement(EJSS_INTERFACE.panel,"configPanel", _view.topPanel) // EJsS HtmlView.HtmlView Page: declaration of element 'configPanel'
       ;
 
@@ -1038,8 +1050,9 @@ function sound_analyzer_View_0 (_topFrame) {
       ;
 
     _view._addElement(EJSS_DRAWING2D.text,"xaxisLabel", _view.plottingPanel) // EJsS HtmlView.HtmlView Page: declaration of element 'xaxisLabel'
-      .setProperty("RelativePosition","SOUTH_EAST") // EJsS HtmlView.HtmlView Page: setting property 'RelativePosition' for element 'xaxisLabel'
+      .setProperty("RelativePosition","SOUTH") // EJsS HtmlView.HtmlView Page: setting property 'RelativePosition' for element 'xaxisLabel'
       .setProperty("Text","Frequency / Hz") // EJsS HtmlView.HtmlView Page: setting property 'Text' for element 'xaxisLabel'
+      .setProperty("Visibility",true) // EJsS HtmlView.HtmlView Page: setting property 'Visibility' for element 'xaxisLabel'
       ;
 
     _view._addElement(EJSS_DRAWING2D.textSet,"axisself", _view.plottingPanel) // EJsS HtmlView.HtmlView Page: declaration of element 'axisself'
@@ -1057,6 +1070,7 @@ function sound_analyzer_View_0 (_topFrame) {
       .setProperty("Height","4vmax") // EJsS HtmlView.HtmlView Page: setting property 'Height' for element 'peakShadow'
       .setProperty("Text","Peak") // EJsS HtmlView.HtmlView Page: setting property 'Text' for element 'peakShadow'
       .setProperty("Display","inline") // EJsS HtmlView.HtmlView Page: setting property 'Display' for element 'peakShadow'
+      .setProperty("MarginTop", "20px") // Add padding on top (if supported)
       ;
 
     _view._addElement(EJSS_INTERFACE.twoStateButton,"runPauseButton", _view.controlPanel) // EJsS HtmlView.HtmlView Page: declaration of element 'runPauseButton'
@@ -1066,6 +1080,7 @@ function sound_analyzer_View_0 (_topFrame) {
       .setProperty("Tooltip","Play/Pause") // EJsS HtmlView.HtmlView Page: setting property 'Tooltip' for element 'runPauseButton'
       .setProperty("TextOff","Press to pause ❚❚") // EJsS HtmlView.HtmlView Page: setting property 'TextOff' for element 'runPauseButton'
       .setProperty("Display","inline") // EJsS HtmlView.HtmlView Page: setting property 'Display' for element 'runPauseButton'
+      .setProperty("MarginTop", "20px") // Add padding on top (if supported)
       ;
 
     _view._addElement(EJSS_INTERFACE.button,"resetButton", _view.controlPanel) // EJsS HtmlView.HtmlView Page: declaration of element 'resetButton'
@@ -1073,7 +1088,9 @@ function sound_analyzer_View_0 (_topFrame) {
       .setProperty("Tooltip","Reset") // EJsS HtmlView.HtmlView Page: setting property 'Tooltip' for element 'resetButton'
       .setProperty("Text","↻") // EJsS HtmlView.HtmlView Page: setting property 'Text' for element 'resetButton'
       .setProperty("Display","inline") // EJsS HtmlView.HtmlView Page: setting property 'Display' for element 'resetButton'
+      .setProperty("MarginTop", "20px") // Add padding on top (if supported)
       ;
+
 
   };
 
