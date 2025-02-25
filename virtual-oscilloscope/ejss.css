@@ -94,3 +94,10 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none !important;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
+
+#xaxisLabel {
+  position: relative;   
+  top: calc(100% + 100px); 
+  left: 50%;
+  transform: translateX(-50%);
+ }
